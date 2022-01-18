@@ -1,0 +1,21 @@
+<h1 class="text-center">Track Your Order</h1>
+<div class="container">
+    <label for="customRange1" class="form-label"></label>
+    <input [(ngModel)]="order" type="range" class="form-range" id="customRange1">
+    <h1><pre style="margin-left: 182px;">       |                |                |</pre></h1>
+    <div class="row text-center">
+        <div class="col-3"><h4>Order Preparing</h4></div>
+        <div class="col-3"><h4>Out From Hotel</h4></div>
+        <div class="col-3"><h4>On The Way</h4></div>
+        <div class="col-3"><h4>Near By Area</h4></div>
+    </div>
+   
+</div>
+
+
+<div class="container mt-5">
+    <img src="https://jkjewellers.co.in/site3425/course_img/2938Order-Tracking-Banner_02.png" style="width: 100%; height: 300px;" alt="">
+   
+    <h1 class="text-center mt-5">{{track}}</h1>
+    <button class="btn btn-danger" style="margin-left: 600px;" (click)="orderfun()">Track Here</button>
+</div>
